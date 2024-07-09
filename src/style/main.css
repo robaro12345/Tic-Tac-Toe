@@ -1,20 +1,22 @@
 
 .PlayArea {
-    width: 600px;
-    min-height: 600px;
+    border-radius: 10px;
+    border: #000 solid 10px;
+    width: 650px;
+    min-height: 650px;
     display: grid;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     gap: 10px;
-    position: relative;
 }
 .square {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: black;
+    opacity: 1;
 }
 .players{
     text-align: center;
@@ -22,7 +24,7 @@
 }
 
 .Reset{
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: black;
     border: 2px solid black;
     border-radius: 5px;

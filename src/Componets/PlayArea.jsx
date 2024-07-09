@@ -47,6 +47,10 @@ function PlayArea() {
        
     }
     function handleClick(event) {
+        if (win || gamefinish) {
+            return;
+        }
+        
         let list = playes;
         if (player === "X"){
             if(list[event] === ""){
