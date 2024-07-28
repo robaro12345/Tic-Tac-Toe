@@ -47,10 +47,9 @@ function PlayArea() {
        
     }
     function handleClick(event) {
-        if (win || gamefinish) {
+        if(win || gamefinish){
             return;
         }
-        
         let list = playes;
         if (player === "X"){
             if(list[event] === ""){
@@ -87,8 +86,8 @@ function PlayArea() {
                 />
             )}
         </div>
-        {!gamefinish?(win && <h1>Winner is {player==="X"?"O":"X"}</h1>):<h1>Its a Draw</h1>}
-        <button className="Reset" onClick={reset}><h1>Reset</h1></button>
+        {!gamefinish?(win && <h1 className="Game">Winner is {player==="X"?"O":"X"}</h1>):<h1 className="Game">Its a Draw</h1>}
+        <button className="Reset" onClick={reset}><h1 className="Reset_text">Reset</h1></button>
     </div>)
 }
 

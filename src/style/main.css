@@ -1,22 +1,26 @@
 
 .PlayArea {
-    border-radius: 10px;
-    border: #000 solid 10px;
-    width: 650px;
-    min-height: 650px;
+    width: 600px;
+    min-height: 600px;
     display: grid;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     gap: 10px;
+    position: relative;
+}
+.Totalarea{
+  margin-top: 50px;
+}
+.Game{
+  margin: 10px;
 }
 .square {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: black;
-    opacity: 1;
 }
 .players{
     text-align: center;
@@ -24,7 +28,7 @@
 }
 
 .Reset{
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: black;
     border: 2px solid black;
     border-radius: 5px;
@@ -34,7 +38,7 @@
 
 }
 .Reset {
-    margin: 100px;
+    margin: 30px;
     padding: 15px 40px;
     border: none;
     outline: none;
@@ -92,3 +96,20 @@
     color: #000;
     font-weight: bold;
   }
+
+.Reset_text{
+  margin: 10px;
+}
+.Title{
+  display: block;
+}
+@media (max-width:600) {
+  .PlayArea{
+    width: 100%;
+    min-height: calc(width);
+    position: absolute;
+  }
+  .Title{
+    display: none;
+  }
+}

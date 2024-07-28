@@ -1,6 +1,4 @@
 body{
-    position: relative;
-    top: 100px;
     background-color: black;
 }   
 #root{
@@ -12,6 +10,7 @@ body{
 }
 
 h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 72px;
     text-align:center ;
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
