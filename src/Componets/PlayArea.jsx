@@ -86,7 +86,7 @@ function PlayArea() {
                 />
             )}
         </div>
-        {!gamefinish?(win && <h1 className="Game">Winner is {player==="X"?"O":"X"}</h1>):<h1 className="Game">Its a Draw</h1>}
+        {win? <h1 className="Game">Winner is {player==="X"?"O":"X"}</h1>:gamefinish && <h1 className="Game">Its a Draw</h1>}
         <button className="Reset" onClick={reset}><h1 className="Reset_text">Reset</h1></button>
     </div>)
 }
